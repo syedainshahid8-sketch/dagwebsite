@@ -1,0 +1,340 @@
+
+
+
+
+
+/* Map container */
+        #map {
+            position: relative;
+            width: 100%;
+            height: 391px;
+
+            background-image: url(../images/map-wh.png);
+	
+			background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+				transition: .8s ease;
+	opacity: 0.5;
+		
+        }
+
+#map:hover {
+	background-image: url(../images/map.png);
+		opacity: 1;
+  transition: 0.3s;
+	
+	}
+
+.map-add1{
+	top: 13%; left: 15%;
+}
+.map-add2{
+	top: 22%; left: 51%;}
+.map-add3{
+	top: 31%; left: 67%;
+}
+
+.location.map-add1{
+	top: 13%; 
+	left: 15%;
+	width: 237px;
+    height: 160px;
+}
+.location.map-add2{
+	top: 26%;
+    left: 54%;
+    width: 167px;
+    height: 130px;
+}
+.location.map-add3{
+	top: 35%;
+    left: 69%;
+    width: 168px;
+    height: 140px;
+}
+
+
+
+
+        /* Location markers */
+        .location {
+            position: absolute;
+           
+            border-radius: 50%;
+            background-color:transparent;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        /* Hover effect for locations */
+        .location:hover {
+            background-color: transparent;
+        }
+
+        /* Normal div for showing address */
+        .location-info {
+            position: sticky;
+            background-color: rgba(0, 0, 0, 0.8);
+            color: white;
+            padding: 10px;
+		
+            border-radius:20px;
+            display: none;
+            z-index: 9999;
+            font-size: 14px;
+            white-space: pre-line; /* Allows line breaks */
+            max-width: 250px !important; /* Optional: prevent the tooltip from being too wide */
+            text-align: center; /* Optional: for better alignment */
+					transition: .8s ease;
+        }
+
+        /* Show the info div when hovering over a location */
+        .location:hover + .location-info {
+            display: block;
+					transition: .8s ease;
+			
+        }
+
+div#info1, div#info2, div#info3 {
+    width: 250px;
+
+}
+
+
+.mp-sec{
+	padding: 0px !important;
+}
+
+.map-add1 .location-info {
+margin-top: 74px;
+    margin-left: 20px;
+   
+}
+.map-add2 .location-info {
+margin-top: 84px;
+    margin-left: -41px;
+}
+
+.map-add3 .location-info {
+margin-top: 97px;
+    margin-left: -40px;
+}
+
+
+@media only screen and (min-width: 1100px) and (max-width: 1400px) {
+	
+.map-add1 .location-info {
+margin-top: 74px;
+    margin-left: 20px;
+   
+}
+.map-add2 .location-info {
+margin-top: 74px;
+    margin-left: -41px;
+}
+
+.map-add3 .location-info {
+margin-top: 84px;
+    margin-left: -40px;
+}	
+}
+
+/* Ensure responsiveness */
+@media only screen and (min-width: 1100px) and (max-width: 1900px) {
+.location.map-add1{
+	       
+        left: 13%;
+        width: 267px;
+        height: 160px;
+}
+.location.map-add2{
+	        top: 29%;
+        left: 55%;
+        width: 137px;
+        height: 110px;
+}
+.location.map-add3{
+	top: 39%;
+        left: 72%;
+        width: 128px;
+        height: 110px;
+}
+	
+	
+	
+
+}
+
+
+
+/* Ensure responsiveness */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+.location.map-add1{
+	   top: 20%;
+    left: 9%;
+    width: 229px;
+    height: 135px;
+
+}
+.location.map-add2{
+	        top: 29%;
+        left: 55%;
+        width: 137px;
+        height: 110px;
+}
+.location.map-add3{
+	top: 39%;
+        left: 72%;
+        width: 128px;
+        height: 110px;
+}
+	
+	
+	
+		
+			.map-add1 .location-info {
+margin-top: 53px;
+    margin-left: -23px;
+   
+}
+.map-add2 .location-info {
+margin-top: 74px;
+    margin-left: -50px;
+}
+
+.map-add3 .location-info {
+margin-top: 79px;
+    margin-left: -52px;
+}
+
+}
+
+
+
+/* Ensure responsiveness */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+.location.map-add1{
+	     top: 24%;
+    left: 8%;
+    width: 177px;
+    height: 120px;
+
+}
+.location.map-add2{
+	         top: 33%;
+    left: 54%;
+    width: 117px;
+    height: 100px;
+}
+.location.map-add3{
+	top: 39%;
+    left: 72%;
+    width: 108px;
+    height: 100px;
+}
+
+	
+			.map-add1 .location-info {
+margin-top: 51px;
+    margin-left: -37px;
+   
+}
+.map-add2 .location-info {
+margin-top: 60px;
+    margin-left: -60px;
+}
+
+.map-add3 .location-info {
+margin-top: 70px;
+    margin-left: -70px;
+}
+	
+	
+}
+
+
+/* Ensure responsiveness */
+@media only screen and (min-width: 520px) and (max-width: 767px) {
+.location.map-add1{
+top: 30%;
+        left: 7%;
+        width: 177px;
+        height: 100px;
+
+}
+.location.map-add2{
+	        top: 35%;
+    left: 54%;
+    width: 97px;
+    height: 90px;
+}
+.location.map-add3{
+	top: 41%;
+    left: 73%;
+    width: 78px;
+    height: 80px;
+}
+
+	
+		.map-add1 .location-info {
+margin-top: 38px;
+    margin-left: -42px;
+   
+}
+.map-add2 .location-info {
+margin-top: 54px;
+    margin-left: -71px;
+}
+
+.map-add3 .location-info {
+margin-top: 57px;
+    margin-left: -81px;
+}
+}
+
+
+/* Ensure responsiveness */
+@media only screen and (min-width: 320px) and (max-width: 519px) {
+.location.map-add1{
+top: 33%;
+    left: 0%;
+    width: 147px;
+    height: 90px;
+
+}
+.location.map-add2{
+	    top: 38%;
+    left: 53%;
+    width: 67px;
+    height: 70px;
+}
+.location.map-add3{
+	top: 42%;
+    left: 72%;
+    width: 58px;
+    height: 70px;
+}
+	
+	.map-add1 .location-info {
+margin-top: 37px;
+    margin-left: -12px;
+   
+}
+.map-add2 .location-info {
+margin-top: 43px;
+    margin-left: -80px;
+}
+
+.map-add3 .location-info {
+margin-top: 47px;
+    margin-left: -140px;
+}
+
+}
+
+
+
+
+
+
